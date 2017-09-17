@@ -6,7 +6,7 @@ clipper_arguments = reqparse.RequestParser()
 clipper_arguments.add_argument(CLIPPER_LABEL['layer_id'], type=str, required=True, default='demo:greene_county_wetland',
                                help='usage: [workspace]:[layer]', location='args')
 clipper_arguments.add_argument(CLIPPER_LABEL['geoserver_url'], type=str, required=True,
-                               default='http://yanfu.zhou.gov/geoserver/wps',
+                               default='http://docker.for.mac.localhost/geoserver/wps',
                                help='example: http://localhost:6080/geoserver/wps', location='args')
 
 crs = api.model('projection', {
